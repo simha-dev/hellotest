@@ -1,0 +1,23 @@
+SchemaVersion: '1.0'
+Name: 'Hello World'
+Version: '1.0.0'
+Description: 'Hello World Action used for testing'
+Configuration:
+  who-to-greet:
+    Description: 'Name of the person to greet.'
+    Required: true
+    DisplayName: 'Name of the person to greet'
+    Type: string
+SupportedComputeTypes:
+  - 'EC2'
+  - 'LAMBDA'
+Environment:
+  Required: false
+Inputs:
+  Sources:
+    Required: false
+  Artifacts:
+    Required: false
+Runs:
+  Using: 'node16'
+  Main: 'dist/index.js'
