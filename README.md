@@ -26,7 +26,7 @@ Triggers:
     - main
 Actions:
   HelloWorldAction:
-    Identifier: aws/hello-world@v1
+    Identifier: aws/hello-world-test-gamma@v1
     Inputs:
       Sources:
         - WorkflowSource
